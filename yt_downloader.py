@@ -12,13 +12,15 @@ class ytDL:
     def __init__(self) -> None:
         """
         Parameters:
-        self.video_url_id (str): the video that going to be downloaded
+        self.video_url (str): the URL of video going to be downloaded
 
         """
 
-        self.video_url_domain= 'https://www.youtube.com/watch?v='
-        self.video_url_id = 'ym4c711LseE'
-        self.video_url = ''.join([self.video_url_domain, self.video_url_id])
+        #self.video_url_domain= 'https://www.youtube.com/watch?v='
+        #self.video_url_id = 'ym4c711LseE'
+        #self.video_url = ''.join([self.video_url_domain, self.video_url_id])
+        
+        self.video_url = 'https://www.youtube.com/watch?v=ym4c711LseE'
         self.yt = YouTube(self.video_url)
         self.video_title = self.yt.title
         self.uploader = self.yt.author
